@@ -13,24 +13,22 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-article {
+
+.contentwrapper {
+    margin: auto;
+    width: 1200px;
     font-family: Arial;
     text-align: center;
     align-items: center;
-    max-width: 1200px;
     width: 100%;
-    display: block;
-    box-sizing: border-box;
-    flex-direction: column;
-    margin: auto;
     margin-top: 20px;
     background-image: url('nugget.svg');
     background-repeat: no-repeat;
     background-position-x: 170px;
     background-position-y: 370px;
     color: rgb(51, 51, 51);
+    display: block;
 }
-
 
 header {
     font-family: Arial; 
@@ -46,7 +44,6 @@ header {
     background-image: url(landingUnderlineHighlight.svg);
     background-repeat: no-repeat;
     background-position-y: 49px;
-    display: flex;
 }
 
 @media (max-width: 1200px) {
@@ -54,7 +51,6 @@ header {
         font-size: 42px;
         line-height: 46px;
         text-indent: 0px;
-        display: flex;
     }
 }
 @media (max-width: 485px) {
@@ -77,14 +73,12 @@ header {
     font-size: 24px;
     margin-left: 325px;
     margin-right: 325px;
-    display: flex;
 }
 @media (max-width: 1200px) {
     .firstpar {
         font-size: 18px;
         line-height: 24px;
         letter-spacing: -0.1em;
-        display: flex;
     } 
 }
 @media (max-width: 374px) {
@@ -95,7 +89,6 @@ header {
 }
 .secondpar {
     font-size: 24px;
-    display: flex;
 }
 @media (max-width: 1200px) {
     .secondpar {
