@@ -343,8 +343,10 @@ a {
 }
 .rightside {
     text-align: right;
-    align-self: flex-end;
+    align-items: flex-end;
     margin-bottom: 14.85px;
+    display: flex;
+    flex-direction: column;
 }
 .author {
     font-size: 14px;
@@ -352,6 +354,38 @@ a {
 }
 .network {
     margin-bottom: 35px;
+    width: 272px;
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    justify-content: space-between;
+    margin-top: 25px;
+    -webkit-box-pack: justify;
+}
+.downlist {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+.customer {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-width: 0px 1px 0px 0px;
+}
+.settings {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-width: 0px 1px 0px 0px;
+}
+.policy {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-width: 0px 1px 0px 0px;
+}
+.details {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-width: 0px 1px 0px 0px;
 }
 .img2 {
     aspect-ratio: auto 212 / 54;
