@@ -445,6 +445,54 @@ a {
     width: 64px;
     height: 64px;
 }
+.c {
+    margin-top: 84.85px;
+}
 .svg1 {
-    
+    width: 637px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.shinytg {
+    width: 163px;
+    height: 163px;
+    background-image: url(telegramFlourish.svg);
+    background-position: center top -2px;
+    background-repeat: no-repeat;
+    background-size: 163px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.shinytw {
+    width: 163px;
+    height: 163px;
+    background-image: url(twitterFlourish.svg);
+    background-position: center top -2px;
+    background-repeat: no-repeat;
+    background-size: 163px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.shinylkdn {
+    width: 163px;
+    height: 163px;
+    background-image: url(linkedInFlourish.svg);
+    background-position: center top -2px;
+    background-repeat: no-repeat;
+    background-size: 163px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
