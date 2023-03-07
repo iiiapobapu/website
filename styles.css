@@ -17,7 +17,7 @@ body {
 .contentwrapper {
     margin: auto;
     max-width: 1200px;
-    font-family: Arial;
+    font-family: Inter,Roboto,Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
     text-align: center;
     align-items: center;
     width: 100%;
@@ -30,7 +30,8 @@ body {
     display: block;
 }
 .para1 {
-    max-width: 1200px;
+    max-width: 560px;
+    margin: auto;
 }
 
 header {
@@ -77,14 +78,14 @@ header {
 .firstpar {
     text-align: left;
     font-size: 24px;
-    margin-left: 325px;
-    margin-right: 325px;
+    font-weight: 600;
+
 }
 @media (max-width: 1200px) {
     .firstpar {
         font-size: 18px;
         line-height: 24px;
-        letter-spacing: -0.1em;
+        letter-spacing: -0.01em;
     } 
 }
 @media (max-width: 374px) {
@@ -432,7 +433,6 @@ a {
 }
 .learn {
     color: gray;
-    font-weight: bolder;
 }
 
 .signup {
