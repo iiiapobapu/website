@@ -479,6 +479,8 @@ a {
 
 }
 .svg1 {
+    margin: auto;
+    justify-content: space-between;
     width: 637px;
     padding-top: 80px;
     padding-bottom: 80px;
