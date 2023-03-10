@@ -22,7 +22,6 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 20px;
-    background-image: url('nugget.svg');
     background-repeat: no-repeat;
     background-position-x: 170px;
     background-position-y: 370px;
@@ -142,6 +141,10 @@ h2 {
     width: 858px;
     height: 350px;
     margin: auto;
+    background-image: url('nugget.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 63px;
 }
 .forma {
     max-width: 1200px;
@@ -156,18 +159,30 @@ h2 {
 .img1 {
     aspect-ratio: auto 212 / 54;
 }
-#mail {
-    border-style: none;
-    border-radius: 25px;
+.inputwrapper {
+    width: 100%;
+    max-width: 520px;
     padding: 15px;
-    width: 520px;
-    height: 20px;
     position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 100px !important;
+}
+.mail {
+    border-style: none;
+    border-radius: 40px;
+    width: 520px;
+    height: 48px;
+    position: absolute;
     left: 100px;
     font-size: 18px;
     font-weight: bolder;
 }
-#mail:focus-visible {
+.mail:focus-visible {
     border-style: none;
     outline: 0px;
 }
@@ -436,12 +451,9 @@ a {
 }
 
 .signup {
-    margin-top: 120px;
-    margin-bottom: 10px;
     max-width: 500px;
-    margin-left: 325px;
-    margin-right: 325px;
     text-align: left;
+    margin: auto;
 }
 .telegram {
     width: 32px;
@@ -490,6 +502,9 @@ a {
     margin: auto;
     justify-content: space-between;
 }
+@media (max-width: 1200px) {
+
+}
 
 .shinytg {
     width: 163px;
@@ -504,6 +519,13 @@ a {
     -webkit-box-pack: center;
     justify-content: center;
 }
+@media (max-width: 1200px) {
+    .shinytg {
+    width: 82px;
+    height: 82px;
+    background-size: 82px;
+    }
+}
 .shinytw {
     width: 163px;
     height: 163px;
@@ -517,6 +539,13 @@ a {
     -webkit-box-pack: center;
     justify-content: center;
 }
+@media (max-width: 1200px) {
+    .shinytw {
+    width: 82px;
+    height: 82px;
+    background-size: 82px;
+    }
+}
 .shinylkdn {
     width: 163px;
     height: 163px;
@@ -529,4 +558,11 @@ a {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
+}
+@media (max-width: 1200px) {
+    .shinylkdn {
+    width: 82px;
+    height: 82px;
+    background-size: 82px;
+    }
 }
