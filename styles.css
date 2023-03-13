@@ -146,6 +146,22 @@ h2 {
     background-repeat: no-repeat;
     padding-top: 63px;
 }
+@media (max-width: 1200px) {
+    .mailinput {
+        background-size: 592px 300px;
+        height: 300px;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 486px) {
+    .mailinput {
+        background-size: 648px 323px;
+        margin: 28px auto 0px;
+        height: 323px;
+        padding-top: 46px;
+        position: relative;
+    }
+}
 .forma {
     max-width: 1200px;
 }
@@ -165,12 +181,13 @@ h2 {
     padding: 15px;
     position: relative;
     display: flex;
+    flex: 1 1 0%;
     flex-flow: row nowrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     align-items: center;
     border-radius: 100px !important;
+    left: 165px;
 }
 .mail {
     border-style: none;
@@ -178,9 +195,8 @@ h2 {
     width: 520px;
     height: 48px;
     position: absolute;
-    left: 100px;
     font-size: 18px;
-    font-weight: bolder;
+    padding: 2px 2px 2px 32px;
 }
 .mail:focus-visible {
     border-style: none;
@@ -194,8 +210,8 @@ input[type="button"] {
     background-color: rgb(51, 51, 51);
     color: white;
     font-size: 18px;
-    position: relative;
-    right: 107px;
+    position: absolute;
+    right: -12px;
     top: 1px;
     bottom: 1px;
     border-color: rgb(51, 51, 51);
@@ -210,8 +226,7 @@ input[type="button"]:hover {
     background-color: rgb(51, 51, 51);
     color: white;
     font-size: 18px;
-    position: relative;
-    right: 107px;
+    position: absolute;
     top: 1px;
     bottom: 1px;
     border-color: rgb(51, 51, 51);
@@ -220,10 +235,21 @@ input[type="button"]:hover {
     cursor: pointer;
     font-weight: bolder;
 }
+.agree {
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.55);
+}
+.privacy-policy {
+    font-weight: 600;
+}
+.placeholder {
+    margin-left: 15px;
+}
 .contentBox {
-    padding: 15px;
+    padding: 12px;
     font-size: 14px;
-    max-width: 1200px;
 } 
 @media (max-width: 486px) {
     .contentBox {
@@ -238,7 +264,6 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
     position: relative;
     display: inline-block;
-    padding-right: 70px;
 }
 input[type="checkbox"] + label::before {
     content:"";
