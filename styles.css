@@ -1,8 +1,13 @@
+html {
+    overflow-x: hidden;
+}
 body {
     background-image: url('beigeWave.svg'), url('darkWave.svg');
     background-repeat: no-repeat;
     background-position: top, bottom;
     background-size: 100% 305px, 112% 500px;
+    position: relative;
+    overflow-x: hidden;
 }
 * {
     box-sizing: border-box;
@@ -238,7 +243,7 @@ h2 {
 .mail {
     border-style: none;
     border-radius: 40px;
-    width: 520px, 100%;
+    width: min(520px, 100%);
     height: 48px;
     position: absolute;
     font-size: 18px;
@@ -374,8 +379,8 @@ input[type="checkbox"]:checked + label::after {
     color:rgb(51, 51, 51);
 }
 .button {
-    width: 250px;
-    height: 200px;
+    width: 278px;
+    height: 202px;
     border-style: groove;
     border-width: 1px;
     border-radius: 25px;
@@ -385,6 +390,15 @@ input[type="checkbox"]:checked + label::after {
     font-size: 18px;
     text-align: center;
 }
+@media (max-width: 1200px) {
+    .button {
+        width: 100%;
+        height: 174px;
+        padding: 16px 24px 32px;
+        margin-top: 16px;
+    }
+}
+
 .month {
     font-size: 24px;
     position: relative;
@@ -396,8 +410,8 @@ input[type="checkbox"]:checked + label::after {
     color: #f4dd6a;
 }
 .button:hover {
-    width: 250px;
-    height: 200px;
+    width: 278px;
+    height: 202px;
     border-style: solid;
     border-radius: 25px;
     border-width: 1px;
@@ -406,6 +420,14 @@ input[type="checkbox"]:checked + label::after {
     cursor: pointer;
     font-size: 18px;
     filter:brightness(115%)
+}
+@media (max-width: 1200px) {
+    .button:hover {
+        width: 100%;
+        height: 174px;
+        padding: 16px 24px 32px;
+        margin-top: 16px;
+    }
 }
 
 .buttons {
@@ -423,6 +445,24 @@ input[type="checkbox"]:checked + label::after {
         width: 100%
     }
 }
+.centeredwrapper {
+    display: flex;
+    flex: 1 1 0%;
+    flex-flow: row-nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 120px;
+}
+.buttonwrapper {
+    position: absolute;
+    margin: auto;
+    width: 290px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
 .button2 {
     width: 278px;
     height: 60px;
@@ -431,12 +471,16 @@ input[type="checkbox"]:checked + label::after {
     border-style: solid;
     border-width: 2px;
     background-color: #333333;
-    margin-top: 30px;
     color: white;
     font-size: 125%;
     font-weight: bolder;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 1200px) {
+    .button2 {
+        flex: 1 1 0%;
+    }
 }
 
 .button2:hover {
@@ -446,7 +490,6 @@ input[type="checkbox"]:checked + label::after {
     border-style: hidden;
     border-width: 2px;
     background-color: #333333;
-    margin-top: 30px;
     cursor: pointer;
     color: white;
     font-size: 125%;
@@ -456,6 +499,14 @@ input[type="checkbox"]:checked + label::after {
 a {
     text-decoration: none;
     color: black;
+}
+footer {
+    align-self: stretch;
+}
+@media (max-width: 900px) {
+    footer {
+        height: auto;
+    }
 }
 
 .footWrapper {
@@ -468,6 +519,13 @@ a {
     margin: auto;
     justify-content: space-between;
     margin-bottom: 14.85px;
+    -webkit-box-pack: justify;
+}
+@media (max-width: 900px) {
+    .footWrapper {
+        flex-direction: column-reverse;
+        
+    }
 }
 .leftside {
     text-align: left;
@@ -475,19 +533,40 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
+@media (max-width: 900px) {
+    .leftside {
+        align-items: center;
+        -webkit-box-align: center;
+        margin-top: 48px;
+    }
+}
 .rightside {
     text-align: right;
     align-items: flex-end;
     display: flex;
     flex-direction: column;
 }
-.author {
+@media (max-width: 900px) {
+    .rightside {
+        align-items: center;
+        -webkit-box-align: center;
+    }
+}
+    
+.authorwrapper {
     font-size: 14px;
     color: gray;
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
+@media (max-width: 900px) {
+    .authorwrapper {
+        display: none;
+        left: 30px;
+    }
+}
+ 
 .network {
     margin-bottom: 35px;
     width: 272px;
@@ -498,6 +577,11 @@ a {
     margin-top: 25px;
     -webkit-box-pack: justify;
 }
+@media (max-width: 1200px) {
+    .network {
+        margin-top: 0px;
+    }
+}
 .downlist {
     display: flex;
     flex-direction: row;
@@ -507,21 +591,25 @@ a {
     padding-left: 8px;
     padding-right: 8px;
     border-width: 0px 1px 0px 0px;
+    color: rgb(249, 246, 242);
 }
 .settings {
     padding-left: 8px;
     padding-right: 8px;
     border-width: 0px 1px 0px 0px;
+    color: rgb(249, 246, 242);
 }
 .policy {
     padding-left: 8px;
     padding-right: 8px;
     border-width: 0px 1px 0px 0px;
+    color: rgb(249, 246, 242);
 }
 .details {
     padding-left: 8px;
     padding-right: 8px;
     border-width: 0px 1px 0px 0px;
+    color: rgb(249, 246, 242);
 }
 .img2 {
     aspect-ratio: auto 212 / 54;
