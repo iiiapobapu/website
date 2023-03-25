@@ -58,6 +58,16 @@ body {
 .para1 {
     max-width: 560px;
     margin: auto;
+    background-image: url(linkCircleHighlight.svg);
+    background-repeat: no-repeat;
+    background-position-y: 55px;
+    background-position-x: 390px;
+}
+@media (max-width: 1200px) {
+    .para1 {
+        background-size: 22%;
+        background-position-x: -10px;
+    }
 }
 
 header {
@@ -85,12 +95,15 @@ header {
         font-size: 42px;
         line-height: 46px;
         text-indent: 0px;
+        background-size: 27%;
+        background-position-y: 35px;
     }
 }
 @media (max-width: 485px) {
     .maintext1 {
         font-size: 28px;
         line-height: 32px;
+        background-position-y: 24px;
     }
 }
 
@@ -208,9 +221,7 @@ h2 {
 .nugget1:hover {
     filter: brightness(105%);
 }
-.img1 {
-    aspect-ratio: auto 212 / 54;
-}
+
 .inputwrapper {
     width: 100%;
     max-width: 520px;
