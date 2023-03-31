@@ -9,6 +9,7 @@ body {
     position: relative;
     overflow-x: hidden;
     font-family: Inter,Roboto,Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+    margin: 0px;
 }
 * {
     box-sizing: border-box;
@@ -196,6 +197,7 @@ h2 {
 @media (max-width: 1200px) {
     .mailinput {
         width: 592px;
+        max-width: 100%;
         height: 300px;
         background-size: 592px 300px;
         height: 300px;
@@ -268,6 +270,15 @@ h2 {
     .mail {
         font-size: 16px;
         width: min(485px, 50vw + 212px);
+        max-width: 100%;
+        right: 10px;
+    }
+}
+@media (max-width: 486px) {
+    .mail {
+        width: (465px 50vw + 212px);
+        right: 36px;
+        max-width: 100%;
     }
 }
 
@@ -296,7 +307,14 @@ h2 {
         right: -63px;
     }
 }
-
+@media (max-width: 486px) {
+    .button1 {
+        width: min(465px, 50vw + 212px);
+        max-width: 100%;
+        top: 95px;
+        right: 36px;
+    }
+}
 .button1:hover {
     padding: 8px;
     border-radius: 25px;
@@ -314,6 +332,15 @@ h2 {
     cursor: pointer;
     font-weight: bolder;
 }
+@media (max-width: 486px) {
+    .button1:hover {
+        width: min(465px, 50vw + 212px);
+        max-width: 100%;
+        top: 95px;
+        right: 36px;
+    }
+}
+
 .agree {
     font-weight: 600;
     font-style: normal;
@@ -354,6 +381,7 @@ input[type="checkbox"] + label::before {
     background: #f4dd6a;
     border-radius: 5px;
 }
+
 input[type="checkbox"]:checked + label::before {
     content:"";
     position: absolute;
@@ -695,8 +723,18 @@ footer {
     margin-right: 40px;
     color: black;
 }
+@media (max-width: 486px) {
+    .about {
+        display: none;
+    }
+}
 .archive {
     color: black;
+}
+@media (max-width: 486px) {
+    .archive {
+        display: none;
+    }
 }
 .learn {
     color: gray;
@@ -731,16 +769,16 @@ footer {
     height: 32px;
 }
 .shinytelegram {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
 }
 .shinytwitter {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
 }
 .shinylinkedin {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
 }
 .c {
 
@@ -749,6 +787,7 @@ footer {
     margin: auto;
     justify-content: space-between;
     width: 637px;
+    max-width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
     align-items: center;
@@ -758,7 +797,11 @@ footer {
     justify-content: space-between;
 }
 @media (max-width: 1200px) {
-
+    .svg1 {
+        width: 258px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 
 .shinytg {
